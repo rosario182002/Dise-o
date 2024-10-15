@@ -1,0 +1,22 @@
+.contenedor{
+    background-color: #d7bde2;
+    width: 400px;
+    height: 400px;
+    margin: 5% auto;
+    display: flex;
+    
+}
+.item{
+    background-color: #F08080;
+    width: 180px;
+    height: 40px;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item:first-child{
+    order: 1;
+    align-self: self-end;
+   
+} 

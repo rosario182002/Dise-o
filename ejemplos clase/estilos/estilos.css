@@ -1,0 +1,24 @@
+.contenedor {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+   
+  .item {
+    width: calc(1000px / 3);
+    border: 3px solid;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  /*Responsive*/
+  @media  (max-width:600px){
+    .contenedor{
+        flex-direction: column;
+    }
+    .item{
+        width: 100%;
+    }
+  }

@@ -1,0 +1,100 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0; /* esto para que me elimine la linea blanca de arriba*/
+    padding: 0%; /*para que me elimine cualquier relleno por defecto*/
+}
+#cabezera{
+    background-color: #000; /* Fondo negro */
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end; /* El ícono en la esquina derecha */
+    align-items: center;
+    height: 60px;
+}
+
+.menu-icon{  /*Esto para el menu hamburguesa*/
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    margin-right: 50px; /*para mover el icono*/
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* texto izquierda y iconos derecha */
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4; /* Color de fondo para separar la sección */
+}
+.contenedor-izquierda{
+    font-size: 22px;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0;
+    height: 6em;
+    overflow: hidden;
+    
+}
+.iconos{
+    display: flex;
+    gap: 15px;/*Espacio de los iconos*/
+    margin-top: 100px;
+    align-self: flex-end;
+   
+}
+.icon {
+    width: 24px; /* Tamaño de los íconos de redes sociales */
+    height: 24px;
+}
+
+.cart-icon {
+    width: 32px; /* Más grande que los demás íconos */
+    height: 32px;
+}
+.contenedor-textos {
+    display: flex; /* Usamos flex para alinear los textos */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: flex-start; /* Centramos verticalmente */
+    margin-top: 40px 0; /* Espacio superior */
+    width: 100%;
+}
+h3{
+    color: #47a9e8;
+}
+.texto1, .texto2, .texto3 {
+    flex: 1; /*para que ocupe el mismo espacio*/
+    margin: 0 15px; /* Espacio lateral entre los textos */
+    font-size: 18px; /* Tamaño de la fuente de los textos */
+    text-align: center;
+    max-width: 20%;
+}
+.grande{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    bottom: 0%;
+}
+.primero{
+    background-color: #1976d2;
+    width: 25%;
+    text-align: center;
+    padding: 1rem;
+}
+.segundo{
+    background-color: #47a9e8;
+    width: 25%;
+    text-align: center;
+    padding: 1rem;
+}
+.tercero{
+    background-color: #25d366;
+    width: 25%;
+    text-align: center;
+    padding: 1rem;
+}
+.cuarto{
+    background-color: #ff0000;
+    width: 25%;
+    text-align: center;
+    padding: 1rem;
+}

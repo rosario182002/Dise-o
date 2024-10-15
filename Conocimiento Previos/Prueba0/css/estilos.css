@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+h1 { 
+    text-align: center;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+.menu ul li {
+    margin: 0 2%;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.bloque {
+    width: 46%;
+    margin: 0 1%;
+    color: #fff;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+.verde {
+    background-color: green;
+}
+.azul {
+    background-color: blue;
+}
+*/
+.bloque:first-child{
+    background-color: green;
+}
+.bloque:last-child{
+    background-color: blue;
+}
+.pie{
+    margin: 0 1%;
+    text-align: center;
+    font-size: 0.75rem;   
+}
+
+
