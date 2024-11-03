@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+
+}
+.contenedor-inicial{
+    padding: 40px;
+    text-align: center;
+}
+.logo{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.cuadrados{
+    margin-bottom: 20px;
+}
+.usuario{
+    border: 1px solid #ccc; /* Borde del rectángulo */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alinear texto a la izquierda */
+    min-height: 100px;
+}
+.cuadrados label{
+    display: block;
+    margin: 10px 0;
+}
+input [type="email"]{
+
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.info{
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+}
