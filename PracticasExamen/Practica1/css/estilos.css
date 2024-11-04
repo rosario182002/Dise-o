@@ -10,9 +10,14 @@ body{
     font-family: Arial, sans-serif;
 
 }
+input{
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    padding-right: 3em;
+}
 .contenedor-inicial{
-    padding: 40px;
     text-align: center;
+    width: 40%;
 }
 .logo{
     max-width: 100%;
@@ -26,8 +31,11 @@ body{
     border: 1px solid #ccc; /* Borde del rectángulo */
     border-radius: 4px; /* Bordes redondeados */
     padding: 20px; /* Espaciado interno */
-    text-align: center; /* Alinear texto a la izquierda */
+    text-align: left; /* Alinear texto a la izquierda */
     min-height: 100px;
+}
+.usuario p{
+    line-height: 1.5em;
 }
 .cuadrados label{
     display: block;
