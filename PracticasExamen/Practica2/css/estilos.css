@@ -1,0 +1,113 @@
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.cabecera .izquierda {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.cabecera .derecha {
+    margin-left: auto; 
+}
+
+.cabecera .derecha a {
+    text-decoration: none;
+    font-size: 16px;
+    color:#bdc3c7; 
+}
+
+.linea {
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #ddd;
+    border-radius: 15px;    
+}
+.logo img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px; 
+}
+
+.correo {
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    padding-right: 30%;
+   border-radius: 10px;
+   border: 1px solid #ddd;
+  box-sizing: border-box;
+
+}
+.correo::after{
+    content: "🡺";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.contraseña{
+    text-align: center;
+    color: #2591d8;
+    margin-top: 20px;
+}
+.contraseña a{
+    text-decoration: none;
+    color: #2591d8;
+}
+.contraseña a:hover{
+    text-decoration: underline;
+}
+.logo2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+}
+.logo2 img{
+    width: 100%;
+    height: auto;
+}
+.textito{
+    text-align: center;
+    font-size: 14px;
+    width: 80%;
+    max-width: 600px;
+    margin: 20px auto 0;
+}
+.textito a{
+    text-decoration: none;
+    color: #2591d8;
+}
+.textito a:hover{
+    text-decoration: underline;
+}
