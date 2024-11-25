@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'NunitoSans';
+    src: url(/Tema2/Actividad3/fuentes/NunitoSans-Italic-VariableFont_YTLC\,opsz\,wdth\,wght.ttf);
+}
+
+body{
+    font-family: 'NunitoSans';
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 2rem;
+    margin-top: 20px;
+}
+.Iconos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px; /*Aumenta los espacios*/
+    margin-top: 40px;
+}
+/*Para pc*/
+@media (min-width: 1024px){
+    .Iconos{
+        flex-direction: row;
+    }
+}
+/*Para tablet*/
+@media(max-width:768px){
+    .icono{
+        margin-bottom: 20px;
+    }
+    .icono:nth-child(2){
+        border: 2px;
+    }
+    .icono:nth-child(3){
+        margin-top: 40px;
+        border: 2px;
+        border-radius: 50%;
+    }
+
+}
+
+/*Para movil*/
+@media(max-width:474px){
+    .Iconos{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Practica";
+  src: url(fuentes/Roboto_Condensed/static/RobotoCondensed-Regular.ttf);
+}
+body {
+  font-family: "Practica";
+  background-color: rgb(238, 232, 232);
+  height: 100vh;
+}
+.grande {
+  display: flex;
+  flex-direction: row;
+  width: 1400px;
+  justify-self: center;
+  align-self: center;
+  gap: 2%;
+  margin-top: 160px;
+}
+.user {
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 15px;
+  position: relative;
+}
+.izda {
+  width: 50%;
+}
+.rojo {
+  color: red;
+}
+.input1 {
+  border-radius: 15px;
+  border: solid 1px grey;
+  padding: 10px;
+  width: 95%;
+}
+.imagen {
+  padding-left: 100%;
+}
+.contraseña::before {
+  background-image: url(img/8666618_eye_icon.svg);
+  content: "";
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  left: 92%;
+  top: 66%;
+}
+.piesito {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 15px;
+  font-size: 13px;
+}
+.check {
+  display: flex;
+}
+.olvidado {
+  margin-right: 10px;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.inicio {
+  display: flex;
+  justify-self: center;
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 25px;
+  border: 0px;
+  background-color: red;
+  color: white;
+}
+.inicio:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: solid 1px black;
+  cursor: pointer;
+}
+.descuentos {
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.sale {
+  width: 60px;
+}
+
+.derecha {
+  width: 50%;
+}
+.linea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chiquito {
+  font-size: smaller;
+}
+.grandito {
+  font-size: x-large;
+}
+.ptje p {
+  margin: 3px;
+}
+.azul {
+  color: blue;
+}
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.bderecha {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px;
+}
+.bizda{
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 25px;
+  background-color: rgb(255, 255, 255);
+  border: solid 1px;
+}
+@media (max-width: 2560px){
+  
+   .grande{
+    width: 100%;
+   }
+   body{height: 100vh;}
+  
+} 
+@media (max-width: 500px){
+  .grande{
+    flex-direction: column;
+    align-items: center;
+  }
+  .izda{
+    width: 100%;
+  }
+  .derecha{
+    width: 100%;
+    position: relative;
+  }
+  .input1{
+    width: 93%;
+  }
+  .piesito{
+  flex-direction: column;
+  }
+  .olvidado{
+   text-align:  center;
+  }
+  .contraseña::before{
+    top: 56%;
+  }
+  .botonDresponsive{
+    position: absolute;
+    left: 0;
+    top: -60px;
+    width: 100%;
+  }
+  .bderecha{
+    width: 50%;
+  }
+  .inicio1{
+    width: 50%;
+    justify-self: flex-end;
+  }
+  .inicio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .Ventajas{
+    width: 100%;
+  }
+  .bizda{
+    width: 100%;
+  }
+}

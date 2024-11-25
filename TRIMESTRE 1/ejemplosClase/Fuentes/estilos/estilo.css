@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'estiloApple';
+    src: url(/ejemplosClase/Fuentes/font/sf-pro-text_regular.woff2) format("wolf2"),
+        url(/ejemplosClase/Fuentes/font/i80ly-j51b0.ttf)  format("truetype");
+
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url(/ejemplosClase/Fuentes/font/Roboto-Regular.ttf) format("roboto"),
+    url(/ejemplosClase/Fuentes/font/Roboto-Regular.woff2) format("wolf2")
+}
+body{
+    font-family: "estiloApple";
+}
+
+p{
+    font-family: "roboto";
+}

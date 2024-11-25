@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+</head>
+<body>
+    <div class="contenedor-inicial">
+    <img src="./imagen/logo.png" alt="logo" class="logo">
+    <h1>Iniciar sesión</h1>
+    <div class="cuadrados">
+        <div class="usuario">
+            <label>
+                <input type="radio" name="user" value="root" checked>Usuario raíz
+                <p>Propietario de la cuenta que realiza tareas que requieren <br>acceso ilimitado. <a href="">Más información</a> </p>
+            </label>
+        </div>
+        <div class="usuario">
+            <label>
+                <input type="radio" name="user" value="iam" checked>Usuario IAM
+                <p>Usuario de una cuenta que realiza tareras diarias.<br><a href="">Más información</a> </p>
+            </label>
+        </div>
+    </div>
+    <p><b>Dirección de email del usuario raiz</b></p>
+    <input type="email" placeholder="nombredeusuario@ejemplo.com" required>
+    <button type="button">Siguiente</button>
+    <p class="info">Al continuar, acepta el <a href="">Contrato de cliente de AWS</a> u otro acuerdo para los servicios de AWS y
+         el <a href="">Aviso de privacidad</a>. Este sitio utiliza cookies esenciales. Consulte nuestro 
+         <a href="">Aviso de cookie </a>para obtener más información. </p>
+
+</div>
+</body>
+</html>

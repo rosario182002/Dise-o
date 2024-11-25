@@ -1,0 +1,125 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal */
+.contenedor-principal {
+    display: flex;
+    height: 100vh;
+}
+
+/* Contenedor izquierdo */
+.izquierda {
+    background-color: #808080; /* Gris */
+    width: 30%;
+    height: 100%;
+}
+
+/* Contenedor derecho */
+.derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Estilo del título */
+.derecha h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+/* Estilo del párrafo */
+.derecha p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Estilos para los botones de Google y Facebook */
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.botones button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #000; /* Borde negro */
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+.botones button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Estilo para los campos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 50%;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc; /* Borde gris */
+    width: 100%;
+}
+.iconos{
+    position: relative;
+    width: 100%;
+}
+.iconos input[type="password"]{
+    padding: 10px;
+    border: 1px solid #ccc; /* Borde gris */
+    width: 100%;
+}
+form .iconos  img {
+    position: absolute;
+    right: 10px; /* Distancia desde el borde derecho */
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente la imagen */
+    width: 18px; /* Tamaño de la imagen */
+    cursor: pointer;
+}
+
+
+/* Estilo para el botón de Iniciar sesión */
+form button {
+    padding: 10px;
+    background-color: #000; /* Fondo negro */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Estilo para el enlace de Olvidé mi contraseña */
+a {
+    color: #000;
+    text-decoration: underline;
+    font-size: 0.9em;
+    margin-top: 15px;
+}
+
+a:hover {
+    color: #555;
+}

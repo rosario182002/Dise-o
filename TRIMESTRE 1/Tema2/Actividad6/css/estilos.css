@@ -1,0 +1,51 @@
+
+body {
+    margin: 0;
+
+}
+
+/* Primera capa */
+.primero {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 2em;
+    width: 75%;
+    margin-top: 10px;
+    border-right: 25px solid black;
+    border-bottom: 2em dashed #999999;;
+}
+
+/* Segunda capa */
+.segundo {
+    background-color: #000000;
+    color: white;
+    width: 50%;
+    border-left: 2em solid #000000;
+    border-bottom: 1em solid #4CAF50;
+    border-top: 1em solid #4CAF50;
+
+}
+
+
+/*Responsive*/
+@media(max-width:425px){
+    .primero {
+        background-color: #999999;
+        color: #ffffff;
+        width: 100%;
+        border-bottom: 2em dashed #999999;
+    }
+    .segundo {
+        background-color: #000000;
+        color: white;
+        width: 85%;
+        border-right: 2em solid #000000;
+        border-bottom: 1em solid white;
+        border-top: 1em solid #4CAF50;
+    
+    }
+}
+
+
+
+

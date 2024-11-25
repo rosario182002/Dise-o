@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'LexendDeca';
+    src: url(/Examen_TipoA_rdelgado8484/Fuentes/LexendDeca-VariableFont_wght.ttf) format(ttf);
+}
+
+body {
+    font-family: "LexendDeca";
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+header{
+    display: flex;
+    flex-direction: colum; 
+    background-color: #000;
+}
+.menu-principal{
+    display: flex;
+    align-items: center; /* Alinear verticalmente el contenedor */
+    justify-content: space-between; /* Espacio entre los elementos dentro del contenedor */
+    width: 100%; /* Asegurarse de que ocupa todo el ancho */
+    background-color: #fff;
+}
+.contenedor {
+    align-items: center;
+    text-align: left;
+    background-color: #fff;
+    width: 70%;
+    margin: auto;
+   
+
+}
+.arriba{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+    
+}
+
+.nuevo{
+    background-color: #000;
+    color: #fff;
+    width: 50rem;
+
+}
+
+.contenedor p {
+    font-size: 14px;
+    color: white; 
+}
+
+.contenedor input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white; 
+    color: #333; 
+}
+.contenedor input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: white; 
+    color: #333; 
+}
+
+.contenedor button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.checkbox{
+    text-align: left;
+}
+.contraseña{
+    text-align: center;
+}
+.lineas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.linea{
+    width: 20rem;
+    height: 1px;
+    background-color: #cfcfcf;
+    margin: 0 1px;
+}
+.lineas ::after ::first-line{
+    content: "🔘";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.burbuja{
+    align: right;
+    height: 150;
+    width: 150;
+}
+
+@media (max-width: 500px){    
+    body{
+        background-color: wheat;
+        align-items: center;
+    }
+    .nuevo{
+        background-color: wheat;
+        color: #000;
+    }
+
+    .contenedor{
+        width: 95%;
+    }
+    
+}
