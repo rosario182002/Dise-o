@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: #DCE7EF;   
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DCE7EF;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 100px; 
+    cursor: pointer;
+}
+
+.buscar {
+    background-color: #DCE7EF;
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.buscar-input {
+    width: 60%;
+    padding: 8px 12px;
+    border: 0.5px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+   
+}
+
+.boton-buscar {
+    padding: 8px;
+    border: none;
+    background-color: transparent; 
+    cursor: pointer;
+}
+
+.iconos {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.icon {
+    height: 30px;
+    cursor: pointer;
+}
