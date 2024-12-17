@@ -13,16 +13,60 @@
             <img src="Imagenes/logo.png" alt="logo-tienda" class="logo">
         </div>
         <div class="buscar">
-            <input type="text" placeholder="Buscar..." class="buscar">
-            <button class="boton-buscar"><img src="Imagenes/lupa.png" alt="lupa"></button>
-        </div>
+            <form id="buscar-form">
+                  <input type="text" id="buscar-input" placeholder="Buscar"  />
+                  <input class="buscar-button" type="submit" value="Buscar" />
+                  <i class="search-icon"></i>
+            </form>
+         </div>
        <div class="iconos">
         <img src="Imagenes/user.png" alt="Usuario" class="icon">
         <img src="Imagenes/corazon.png" alt="Favoritos" class="icon">
         <img src="Imagenes/carrito.png" alt="Carrito" class="icon">
        </div>
-
     </header>
+
+    <nav class="navegacion">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#promociones">Promociones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+        </ul>
+    </nav>
+
+    <section class="banner">
+        <div class="banner-img">
+            <img src="./Imagenes/lado1.png" alt="Lado Izquierdo">
+        </div>
+        <div class="banner-titulo">
+            <h1>𝓓𝓾𝓵𝓬𝓮 𝓣𝓮𝓷𝓽𝓪𝓬𝓲ó𝓷</h1>
+        </div>
+        <div class="banner-img">
+            <img src="./Imagenes/lado2.png" alt="Lado Derecho">
+        </div>
+    </section>
     
+
+    <section class="cuadrados">
+        <div class="cuadrado" id="cuadrado1">
+           <img src="./Imagenes/envio.png">
+           <h2>Envió Gratuito</h2>
+            <p>Pedidos superiores a 59€ para España | Superiores a 69€ para Portugal</p>
+        </div>
+        <div class="cuadrado" id="cuadrado2">
+            <img src="./Imagenes/medioAmbiente.png">
+            <h2>Respeto por el Medio Ambiente</h2>
+            <p>Utilizamos cajas recicladas, dandoles un 2º uso</p>
+        </div>
+        <div class="cuadrado" id="cuadrado3">
+            <img src="./Imagenes/diamante.png">
+            <h2>Marcas de Calidad</h2>
+            <p>Ofrecemos marcas de calidad testeadas por nosotros. 
+                50 años de experiencia.
+            </p>
+        </div>
+    </section>
 </body>
 </html>

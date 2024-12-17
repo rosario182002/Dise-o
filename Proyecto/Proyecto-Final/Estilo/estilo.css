@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
-    margin: 0;
+    margin: 10px;
+    padding: 10px;
     font-family: "Open Sans", sans-serif;
     background-color: #DCE7EF;   
 }
 
-.header {
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,38 +15,48 @@ body {
     padding: 10px 20px;
 }
 
-.logo {
-    height: 100px; 
+.logo img {
+    height: 80px; 
     cursor: pointer;
 }
 
 .buscar {
-    background-color: #DCE7EF;
-    flex: 2;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+#buscar-form {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5px;
+    width: 100%;
+    max-width: 400px;
 }
 
-.buscar-input {
-    width: 60%;
+#buscar-input {
+    flex: 1;
     padding: 8px 12px;
-    border: 0.5px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
     outline: none;
-   
 }
 
-.boton-buscar {
-    padding: 8px;
+.buscar-button {
+    padding: 8px 12px;
     border: none;
-    background-color: transparent; 
+    border-radius: 0 4px 4px 0;
+    background-color: #F1CDD7;
+    color: white;
     cursor: pointer;
 }
 
+.buscar-button:hover {
+    background-color: #F1CDD7;
+}
+
 .iconos {
-    flex: 1;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -56,3 +67,109 @@ body {
     height: 30px;
     cursor: pointer;
 }
+/* Estilo para la barra de navegación */
+.navegacion {
+    background-color: #F1CDD7;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navegacion ul li {
+    display: inline;
+}
+
+.navegacion ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.navegacion ul li a:hover {
+    background-color: #F1CDD7;
+    border-radius: 4px;
+}
+/* Estilo para la sección de banner */
+.banner {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    margin: 20px 0;
+    padding: 50px;
+    gap: 10px; 
+}
+
+.banner-img img {
+    height: 550px;
+    width: auto;
+}
+
+.banner-titulo {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px; 
+}
+
+.banner-titulo h1 {
+    font-size: 5rem;
+    color: #F7BB9B;
+    margin: 0;
+}
+
+.cuadrados {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start; 
+    margin: 40px 0;
+    padding: 20px;
+    gap: 20px; 
+}
+
+
+.cuadrado {
+    width: 250px; 
+    height: 250px; 
+    background-color: #F7BB9B;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.cuadrado img {
+    width: 100px;
+    height: 120px;
+    height: auto;
+    margin-bottom: 15px; 
+}
+
+.cuadrado h2 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px; 
+}
+
+
+.cuadrado p {
+    font-size: 1rem;
+    color: white;
+    margin: 0;
+    line-height: 1.5; 
+}
+
+
