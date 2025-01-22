@@ -67,7 +67,7 @@ header {
     height: 30px;
     cursor: pointer;
 }
-/* Estilo para la barra de navegación */
+
 .navegacion {
     background-color: #F1CDD7;
     color: white;
@@ -100,7 +100,15 @@ header {
     background-color: #F1CDD7;
     border-radius: 4px;
 }
-/* Estilo para la sección de banner */
+.navegacion ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-hamburguesa {
+    display: none;
+}
+
 .banner {
     display: flex;
     align-items: center; 
@@ -171,5 +179,210 @@ header {
     margin: 0;
     line-height: 1.5; 
 }
+.texto-imagen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 50px;
+    padding: 20px;
+    background-color: #F7BB9B;
+    border-radius: 15px;
+    gap: 20px;
+}
 
+.texto {
+    flex: 1;
+    padding: 20px;
+    color: black;
+}
 
+.texto h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.texto p {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*ARREGLAR EL FOOTER*/
+.footer {
+    display: flex;
+    justify-content: center;  
+    align-items: flex-end;
+    background-color: #F1CDD7;
+    color: black;           
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 15px;
+    gap: 40px;            
+     
+    flex-wrap: wrap;         
+}
+
+.footer-columna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;  
+}
+
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;      
+    justify-content: center;  
+}
+.footer-iconos{
+    display: flex;
+    align-items: center;
+  text-align: center;
+}
+
+.footer-icon {
+    width: 30px;           
+    height: 30px;
+}
+
+.footer-titulo {
+    font-size: 1.5rem;          
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    width: 120px;           
+    height: auto;
+    margin-top: 10px;
+}
+@media (max-width: 500px) {
+    /* Ajuste de los cuadrados para que estén de 1 en 1 */
+    .cuadrados {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cuadrado {
+        width: 90%;
+        margin: 10px auto;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .cuadrado h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .cuadrado img {
+        width: 45%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .cuadrado p {
+        font-size: 1rem;
+        color: #555;
+    }
+
+    /* Clase texto-imagen: texto arriba y imagen abajo */
+    .texto-imagen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .texto {
+        order: 1;
+    }
+
+    .imagen {
+        order: 2;
+    }
+
+    /* Menú hamburguesa funcional */
+    .navegacion ul {
+        display: none;
+        flex-direction: column;
+        background-color: #F1CDD7;
+        padding: 10px 0;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 70px; /* Ajustar según la altura del header */
+        left: 0;
+        z-index: 100;
+    }
+
+    #navegacion-toggle:checked + .navegacion ul {
+        display: flex;
+    }
+
+    .menu-hamburguesa {
+        cursor: pointer;
+        padding: 10px;
+        background-color: #F1CDD7;
+        color: white;
+        text-align: center;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+
+    .menu-hamburguesa:hover {
+        background-color: #DAB2C5;
+    }
+
+    /* Footer más compacto */
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .footer-logo {
+        margin-bottom: 10px;
+        width: 80px;
+    }
+
+    .footer-columna {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .footer-item {
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .footer h2, .footer h3 {
+        font-size: 1.2rem;
+    }
+}

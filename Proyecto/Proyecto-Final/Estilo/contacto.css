@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    margin: 10px;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    background-color: #DCE7EF;   
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DCE7EF;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 80px; 
+    cursor: pointer;
+}
+
+.buscar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+#buscar-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+#buscar-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.buscar-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #F1CDD7;
+    color: white;
+    cursor: pointer;
+}
+
+.buscar-button:hover {
+    background-color: #F1CDD7;
+}
+
+.iconos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.icon {
+    height: 30px;
+    cursor: pointer;
+}
+
+.navegacion {
+    background-color: #F1CDD7;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+.navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navegacion ul li {
+    display: inline;
+}
+
+.navegacion ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.navegacion ul li a:hover {
+    background-color: #F1CDD7;
+    border-radius: 4px;
+}
+
+.reseñas {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.reseña {
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.estrellas {
+    color: #FFD700;
+    font-size: 1.5rem;
+}
+
+.formulario-reseña {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.formulario-reseña textarea,
+.formulario-reseña select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.formulario-reseña button {
+    padding: 10px;
+    background-color: #F1CDD7;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.formulario-reseña button:hover {
+    background-color: #DAB2C5;
+}
+
+
+/*ARREGLAR EL FOOTER*/
+.footer {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;    
+    background-color: #F1CDD7;
+    color: black;            
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 15px;
+    gap: 40px;               
+    text-align: center;       
+    flex-wrap: wrap;         
+}
+
+.footer-columna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;     
+}
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2rem;        
+    justify-content: center; 
+}
+.footer-iconos{
+    display: flex;
+    align-items: center;
+  text-align: center;
+}
+
+.footer-icon {
+    width: 30px;           
+    height: 30px;
+}
+
+.footer-titulo {
+    font-size: 1.5rem;          
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    width: 120px;            
+    height: auto;
+    margin-top: 10px;
+}
+@media (max-width: 500px) {
+    .banner-img {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .cuadrados {
+        display: block;
+    }
+
+    .cuadrado {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .navegacion ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navegacion ul li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navegacion ul li a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #F1CDD7;
+        color: white;
+        text-align: center;
+    }
+
+    .menu-hamburguesa:hover {
+        background-color: #DAB2C5;
+    }
+
+    #navegacion-toggle:checked + .navegacion ul {
+        display: flex;
+    }
+}

@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dulce Tentación</title>
+    <title>Promociones - Dulce Tentación</title>
     <link rel="icon" type="image/x-icon" href="Imagenes/logo.png">
-    <link rel="stylesheet" href="./Estilo/estilo.css" />
+    <link rel="stylesheet" href="./Estilo/promociones.css" />
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="Imagenes/logo.png" alt="logo-tienda" class="logo">
+            <img src="Imagenes/logo.png" alt="logo-tienda" class="logo" onclick="location.href='index.html'">
         </div>
         <div class="buscar">
             <form id="buscar-form">
-                  <input type="text" id="buscar-input" placeholder="Buscar"  />
+                  <input type="text" id="buscar-input" placeholder="Buscar" />
                   <input class="buscar-button" type="submit" value="Buscar" />
                   <i class="search-icon"></i>
             </form>
@@ -26,8 +26,8 @@
        </div>
        <label for="navegacion-toggle" class="menu-hamburguesa">☰ Menú</label>
        <input type="checkbox" id="navegacion-toggle" style="display: none;">
-       
     </header>
+
     <nav class="navegacion">
         <ul>
             <li><a href="pagina.html">Inicio</a></li>
@@ -37,55 +37,51 @@
             <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
         </ul>
     </nav>
+    <section class="contenido">
+        <h2>Promociones</h2>
+        <p>Descubre nuestras ofertas y promociones especiales. Endulza tu día al mejor precio.</p>
+        
+        <!-- Sección de promociones inventadas -->
+        <div class="cuadrados">
+            <div class="cuadrado">
+                <img src="Imagenes/promoción1.png" alt="Promoción 1">
+                <h2>2x1 en Pasteles</h2>
+                <p>Solo este mes.</p>
+            </div>
+            <div class="cuadrado">
+                <img src="Imagenes/promoción2.png" alt="Promoción 2">
+                <h2>20% de Descuento</h2>
+                <p>En todos los productos.</p>
+            </div>
+            <div class="cuadrado">
+                <img src="Imagenes/promocion3.png" alt="Promoción 3">
+                <h2>Regalo Sorpresa</h2>
+                <p>En compras superiores a 50€.</p>
+            </div>
+        </div>
 
-    <section class="banner">
-        <div class="banner-img">
-            <img src="./Imagenes/lado1.png" alt="Lado Izquierdo">
-        </div>
-        <div class="banner-titulo">
-            <h1>𝓓𝓾𝓵𝓬𝓮 𝓣𝓮𝓷𝓽𝓪𝓬𝓲ó𝓷</h1>
-        </div>
-        <div class="banner-img">
-            <img src="./Imagenes/lado2.png" alt="Lado Derecho">
+        <!-- Promociones inventadas -->
+        <h3>Promociones Especiales</h3>
+        <div class="cuadrados">
+            <div class="cuadrado">
+                <img src="Imagenes/Collage.png" alt="Promoción 4">
+                <h2>La Hora Dulce</h2>
+                <p>20% de descuento en todas las compras entre 3 p.m. y 5 p.m.</p>
+            </div>
+            <div class="cuadrado">
+                <img src="Imagenes/pack-fiesta.png" alt="Promoción 5">
+                <h2>Pack de Fiesta</h2>
+                <p>Compra tres pasteles y llévate el cuarto gratis.</p>
+            </div>
+            <div class="cuadrado">
+                <img src="Imagenes/tartitas.png" alt="Promoción 6">
+                <h2>Tarta del Mes</h2>
+                <p>15% de descuento en la Tarta de Frutos Rojos de este mes.</p>
+            </div>
         </div>
     </section>
+
     
-
-    <section class="cuadrados">
-        <div class="cuadrado" id="cuadrado1">
-           <img src="./Imagenes/envio.png">
-           <h2>Envió Gratuito</h2>
-            <p>Pedidos superiores a 59€ para España | Superiores a 69€ para Portugal</p>
-        </div>
-        <div class="cuadrado" id="cuadrado2">
-            <img src="./Imagenes/medioAmbiente.png">
-            <h2>Respeto por el Medio Ambiente</h2>
-            <p>Utilizamos cajas recicladas, dandoles un 2º uso</p>
-        </div>
-        <div class="cuadrado" id="cuadrado3">
-            <img src="./Imagenes/diamante.png">
-            <h2>Marcas de Calidad</h2>
-            <p>Ofrecemos marcas de calidad testeadas por nosotros. 
-                50 años de experiencia.
-            </p>
-        </div>
-    </section>
-
-    <section class="texto-imagen">
-        <div class="texto">
-            <h2>Quienes Somos</h2>
-            <p>
-                En Dulce Tentación encontrarás una variedad de productos que combinan la tradición de la repostería clásica con toques modernos. 
-                Desde pasteles decorados para celebraciones especiales, como bodas y cumpleaños, hasta postres más sencillos y delicados como tartaletas,
-                cupcakes y galletas artesanales. Ofrecemos sabores únicos y personalizados, buscando siempre resaltar la calidad y frescura en cada bocado.
-        </br>¡Déjanos endulzar tus momentos especiales con la calidez y sabor que sólo nuestros pasteles pueden ofrecer!
-            </p>
-        </div>
-        <div class="imagen">
-            <img src="Imagenes/nuestrosProductos.png" alt="Productos">
-        </div>
-    </section>
-
     <footer class="footer">
         <div class="footer-columna">
             <h2>Contacto Dulce Tentación</h2>
@@ -121,5 +117,7 @@
             <img src="./Imagenes/logo.png" alt="Logo" class="footer-logo">
         </div>
     </footer>
+
+
 </body>
 </html>

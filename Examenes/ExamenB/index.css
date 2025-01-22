@@ -153,8 +153,9 @@ footer div:nth-child(even) {
 }
 
 .imagen {
-  width: 5rem;
-  height: 5rem;
+  --size: 5rem;
+  width: var(--size);
+  height: var(--size);
 }
 
 .posicionImagen {

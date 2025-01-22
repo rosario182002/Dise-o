@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lexend+Deca:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body {
+    font-family: "Dancing Script";
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .contenedor{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 40%;
+  }
+  .cabecera, .textito{
+    text-align: center;
+  }
+  
+  .rojo{
+    text-decoration: none;
+    color: #000;
+  }
+  input{
+    width: 47rem;
+    border: 1px solid rgb(177, 176, 176);
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+ 
+  textarea:focus{
+    padding: 0.5rem;
+    border-radius: 10px;
+    height: 5rem;
+    border: 4px solid #000 ;
+  }
+  
+  button{
+    font-family: "Dancing Script";
+    background-color: #fff;
+    border-color: #1602ff;
+    border-style: solid;
+    border-radius: 10px;
+    width: 70px;
+    height: 40px;
+    margin-left: 44rem;
+    margin-top: 2.5rem;
+  }
+  .contenedor-derecha{
+    height: 20rem;
+    margin-left: 55%;
+    position: absolute;
+  }
+  a{
+    color: #1602ff;
+  }
+
+  @media (max-width: 625px) {
+    body{
+      display: flex;
+      padding-bottom: 1rem;
+      width: 100%;
+      margin: 0%;
+
+    }
+    .cabecera{
+        display: none;
+    }
+    .textito{ 
+      text-align: center;
+    }
+    .nombre, .correo, .mensaje{
+        text-align: left;
+    }
+    textarea{
+        padding: 0.5rem;
+        border-radius: 10px;
+        height: 5rem;
+        width: 20rem;
+      }
+    input{
+        width: 20rem;
+        border: 1px solid rgb(177, 176, 176);
+        padding: 0.5rem;
+        border-radius: 10px;
+      }
+    .rojo{
+        color: red;
+        text-decoration: underline red;
+    }
+   .contenedor-derecha{
+    display: none;
+    
+   }
+   button{
+    margin-left: 1rem;
+    background-color: #1602ff;
+    color: #fff;
+   }
+  }
