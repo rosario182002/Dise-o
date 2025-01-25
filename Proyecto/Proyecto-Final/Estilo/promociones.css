@@ -198,59 +198,127 @@ h3 {
     height: auto;
     margin-top: 10px;
 }
-@media (max-width: 700px) {
-    .banner-img {
-        display: block;
-        width: 100%;
-        text-align: center;
+@media (max-width: 600px) {
+    header {
+        padding: 5px;
     }
 
-    .banner-img img {
-        width: 100%;
-        height: auto;
+    .logo img {
+        height: 100px; 
     }
 
-    .cuadrados {
-        display: block;
+    .buscar {
+        margin: 0px;
     }
 
-    .cuadrado {
-        width: 100%;
-        margin-bottom: 20px;
+    #buscar-form {
+        max-width: 100rem; 
+    }
+
+    .icon {
+       display: none; 
+    }
+    .menu-hamburguesa {
+        display: block; 
+        cursor: pointer;
+        font-size: 1.5rem;
+        padding: 10px;
+        margin-left: 50px; 
+        background-color: #F1CDD7; 
+        border: none;
+        color: white; 
+        width: 50px;
+        height: 45px;
+    }
+
+    .navegacion {
+        display: none; 
+        flex-direction: column;
+        font-size: 5px; 
+        background-color: #F1CDD7; 
+        position: absolute;
+        top: 100px; 
+        left: 50%;
+        width: 50%;
+        height: 50%;
+    }
+
+    .navegacion.activo {
+        display: flex; 
     }
 
     .navegacion ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navegacion li {
+        padding: 1rem;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+    }
+
+    .navegacion li:last-child {
+        border-bottom: none;
+    }
+
+    .navegacion a {
+        color: #333; 
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+    .navegacion ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .navegacion ul li {
-        display: block;
-        text-align: center;
-        padding: 10px 0;
-    }
-
-    .navegacion ul li a {
-        display: block;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .menu-hamburguesa {
-        display: block;
-        cursor: pointer;
-        padding: 10px;
-        background-color: #F1CDD7;
-        color: white;
+        width: 50%; 
         text-align: center;
     }
-
-    .menu-hamburguesa:hover {
-        background-color: #DAB2C5;
+    .cuadrados {
+        display: block; /* Cambiar a bloque para que se apilen */
     }
 
-    #navegacion-toggle:checked + .navegacion ul {
+    .cuadrado {
+        width: 100%; /* Cada cuadrado ocupa el 100% del ancho */
+        margin-bottom: 20px; /* Espacio entre los cuadrados */
+    }
+    .footer {
         display: flex;
+        flex-direction: column;
+        justify-content: space-around; 
+        align-items: center; 
+        background-color: #F1CDD7;
+        color: black;           
+        padding: 40px;
+        margin-top: 40px;
+        border-radius: 15px;
+        width: calc(100% - 80px); 
+        flex-wrap: wrap; 
+
+    }
+    
+    .footer-columna {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;  
+    }
+    
+    .footer-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 1.2rem;      
+        justify-content: center;  
+    }
+    
+    .footer-logo {
+        width: 120px;           
+        height: auto;
+        margin-top: 10px;
     }
 }
