@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades JQuery</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+</head>
+<body>
+    <div class="contenedorPrincipal">
+        <h1>Acceso</h1>
+        <div class="contenedor2">
+            <p>Inicia sesión con tu cuenta <br />
+                o crea una cuenta nueva.
+            </p>
+            <div class="inicioSesion">
+                <p>¿Tienes ya una cuenta?</p>
+                <button id="btn-iniciar-sesion">Iniciar Sesión</button>
+            </div>
+            <div class="crearCuenta">
+                <p>¿No tienes cuenta?</p>
+                <button id="btn-crear-cuenta">Crear una cuenta</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Formulario de Iniciar Sesión -->
+    <form id="form-iniciar-sesion" class="formulario oculto">
+        <h2>Iniciar Sesión</h2>
+        <label for="email">Correo Electrónico</label>
+        <input type="email" id="email" name="email" placeholder="Escribe tu correo">
+        <small class="mensaje-error">Este campo no puede estar vacío</small>
+        
+        <label for="contrasena-login">Contraseña</label>
+        <div class="contenedor-contrasena">
+            <input type="password" id="contrasena-login" name="contrasena-login" placeholder="Escribe tu contraseña">
+            <span class="mostrar-contrasena">👁️</span>
+        </div>
+        <small class="mensaje-error">Este campo no puede estar vacío</small>
+        
+        <button type="submit" id="btn-login">Iniciar Sesión</button>
+    </form>
+
+    <!-- Formulario de Crear Cuenta -->
+    <form id="form-crear-cuenta" class="formulario oculto">
+        <h2>Crear Cuenta</h2>
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Escribe tu usuario">
+        <small class="mensaje-error">Este campo no puede estar vacío</small>
+        
+        <label for="contrasena">Contraseña</label>
+        <div class="contenedor-contrasena">
+            <input type="password" id="contrasena" name="contrasena" placeholder="Escribe tu contraseña">
+            <span class="mostrar-contrasena">👁️</span>
+        </div>
+        <small class="mensaje-error">Este campo no puede estar vacío</small>
+        
+        <label>
+            <input type="checkbox" id="terminos"> Acepto los términos y condiciones
+        </label>
+        
+        <button type="submit" id="btn-crear" disabled>Crear</button>
+    </form>
+<script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+  <script src="./js/funciones.js"></script>
+</body>
+</html>

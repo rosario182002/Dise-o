@@ -1,0 +1,7 @@
+.enlaceSalto{
+   position: absolute;
+   top: -50px;
+}
+.enlaceSalto:focus{
+    top: 0;
+}
