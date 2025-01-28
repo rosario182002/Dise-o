@@ -7,64 +7,84 @@
     <link rel="stylesheet" href="./estilos/estilos.css">
 </head>
 <body>
-    <div class="contenedorPrincipal">
-        <h1>Acceso</h1>
-        <div class="contenedor2">
-            <p>Inicia sesión con tu cuenta <br />
-                o crea una cuenta nueva.
-            </p>
-            <div class="inicioSesion">
+    
+    <div class="contenedor">
+        <div>
+            <h1 class="titulo">Acceso</h1>
+        </div>
+        
+        <div id="seccion-acceso">
+            <div class="subtitulo">Inicia sesión con tu cuenta o <br> crea una cuenta nueva</div>
+            <div class="contenedor-botones">
+                <div class="boton1">
                 <p>¿Tienes ya una cuenta?</p>
-                <button id="btn-iniciar-sesion">Iniciar Sesión</button>
-            </div>
-            <div class="crearCuenta">
+                <button id="boton-iniciar-sesion" class="boton">Iniciar Sesión</button>
+                </div>
+                <div class="boton2">
                 <p>¿No tienes cuenta?</p>
-                <button id="btn-crear-cuenta">Crear una cuenta</button>
+                <button id="boton-crear-cuenta" class="boton">Crear una cuenta</button>
+                </div>
             </div>
+        </div>
+
+        <div id="formulario-iniciar-sesion" class="oculto formulario">
+            <div class="titulo">Cuenta</div>
+            <input type="text" id="correo-inicio" placeholder="Correo o nombre de acceso">
+            <input type="password" id="contrasena-inicio" placeholder="Contraseña">
+            <a href="#" class="enlace">¿Has olvidado la contraseña?</a>
+            <button id="enviar-inicio" class="boton" disabled>Iniciar Sesión</button>
+            <hr class="hr">
+            <div class="subtitulo">Inicia sesión con:</div>
+            <div class="contenedor-botones">
+                <button class="boton-facebook boton"><i class="fab fa-facebook"></i> Facebook</button>
+                <button class="boton-google boton"><i class="fab fa-google"></i> Google</button>
+            </div>
+        </div>
+
+        <div id="opciones-registro" class="oculto formulario">
+            <div class="contenedor-botones">
+                <button id="boton-proveedor" class="boton">Eres Proveedor</button>
+                <button id="boton-cliente" class="boton">Eres Cliente Final</button>
+            </div>
+        </div>
+
+        <div id="formulario-proveedor" class="oculto formulario">
+            <div class="titulo">Crear una cuenta Proveedor</div>
+            <input type="text" placeholder="Nombre Comercial">
+            <input type="email" placeholder="Correo Electrónico">
+            <div class="input-con-icono">
+                <input type="password" id="contrasena-proveedor" placeholder="Contraseña">
+                <span class="icono-ojo">👁️</span>
+            </div>
+            <input type="date">
+            <p class="texto-nota">No podrás cambiar tu fecha de nacimiento más adelante.</p>
+            <hr class="hr">
+            <div class="checkbox">
+                <input type="checkbox" id="terminos-proveedor">
+                <label for="terminos-proveedor">Confirmo que acepto los términos del contrato de la cuenta y estoy de acuerdo con la política privacidad</label>
+            </div>
+            <button id="enviar-proveedor" class="boton" disabled>Crear</button>
+        </div>
+
+        <div id="formulario-cliente" class="oculto formulario">
+            <div class="titulo">Crear una cuenta Cliente</div>
+            <input type="text" placeholder="Nombre Completo">
+            <input type="email" placeholder="Correo Electrónico">
+            <div class="input-con-icono">
+                <input type="password" id="contrasena-cliente" placeholder="Contraseña">
+                <span class="icono-ojo">👁️</span>
+            </div>
+            <input type="password" placeholder="Confirmar Contraseña">
+            <hr class="hr">
+            <div class="checkbox">
+                <input type="checkbox" id="terminos-cliente">
+                <label for="terminos-cliente">Confirmo que acepto los términos del contrato de la cuenta y estoy de acuerdo con la política privacidad</label>
+            </div>
+            <button id="enviar-cliente" class="boton" disabled>Crear</button>
         </div>
     </div>
 
-    <!-- Formulario de Iniciar Sesión -->
-    <form id="form-iniciar-sesion" class="formulario oculto">
-        <h2>Iniciar Sesión</h2>
-        <label for="email">Correo Electrónico</label>
-        <input type="email" id="email" name="email" placeholder="Escribe tu correo">
-        <small class="mensaje-error">Este campo no puede estar vacío</small>
-        
-        <label for="contrasena-login">Contraseña</label>
-        <div class="contenedor-contrasena">
-            <input type="password" id="contrasena-login" name="contrasena-login" placeholder="Escribe tu contraseña">
-            <span class="mostrar-contrasena">👁️</span>
-        </div>
-        <small class="mensaje-error">Este campo no puede estar vacío</small>
-        
-        <button type="submit" id="btn-login">Iniciar Sesión</button>
-    </form>
-
-    <!-- Formulario de Crear Cuenta -->
-    <form id="form-crear-cuenta" class="formulario oculto">
-        <h2>Crear Cuenta</h2>
-        <label for="usuario">Usuario</label>
-        <input type="text" id="usuario" name="usuario" placeholder="Escribe tu usuario">
-        <small class="mensaje-error">Este campo no puede estar vacío</small>
-        
-        <label for="contrasena">Contraseña</label>
-        <div class="contenedor-contrasena">
-            <input type="password" id="contrasena" name="contrasena" placeholder="Escribe tu contraseña">
-            <span class="mostrar-contrasena">👁️</span>
-        </div>
-        <small class="mensaje-error">Este campo no puede estar vacío</small>
-        
-        <label>
-            <input type="checkbox" id="terminos"> Acepto los términos y condiciones
-        </label>
-        
-        <button type="submit" id="btn-crear" disabled>Crear</button>
-    </form>
-<script
-    src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-    crossorigin="anonymous"></script>
-  <script src="./js/funciones.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./js/funciones.js"></script>
 </body>
 </html>

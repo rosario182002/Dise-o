@@ -1,49 +1,78 @@
-$(document).ready(function () {
-    const $btnIniciarSesion = $('#btn-iniciar-sesion');
-    const $btnCrearCuenta = $('#btn-crear-cuenta');
-    const $formIniciarSesion = $('#form-iniciar-sesion');
-    const $formCrearCuenta = $('#form-crear-cuenta');
-    const $contenedorPrincipal = $('.contenedorPrincipal');
-
-    // Mostrar el formulario de iniciar sesión
-    $btnIniciarSesion.on('click', function () {
-        $contenedorPrincipal.hide();
-        $formCrearCuenta.hide();
-        $formIniciarSesion.fadeIn();
+$(document).ready(function() {
+    // Cambiar de secciones
+    $('#boton-iniciar-sesion').click(function() {
+      $('#seccion-acceso').fadeOut(function() {
+        $('#formulario-iniciar-sesion').fadeIn();
+      });
     });
-
-    // Mostrar el formulario de crear cuenta
-    $btnCrearCuenta.on('click', function () {
-        $contenedorPrincipal.hide();
-        $formIniciarSesion.hide();
-        $formCrearCuenta.fadeIn();
+  
+    $('#boton-crear-cuenta').click(function() {
+      $('#seccion-acceso').fadeOut(function() {
+        $('#opciones-registro').fadeIn();
+      });
     });
-
-    // Validar campos vacíos y activar botón
-    const $inputsCrearCuenta = $formCrearCuenta.find('input[type="text"], input[type="password"]');
-    const $checkboxTerminos = $('#terminos');
-    const $botonCrear = $('#btn-crear');
-
-    $inputsCrearCuenta.on('blur', function () {
-        const campoVacio = !$(this).val().trim();
-        $(this).toggleClass('error', campoVacio);
-        $(this).siblings('.mensaje-error').toggle(campoVacio);
-        toggleBotonCrear();
+  
+    $('#boton-proveedor').click(function() {
+      $('#opciones-registro').fadeOut(function() {
+        $('#formulario-proveedor').fadeIn();
+      });
     });
-    
-
-    $checkboxTerminos.on('change', toggleBotonCrear);
-
-    function toggleBotonCrear() {
-        const camposCompletos = $inputsCrearCuenta.toArray().every(input => $(input).val().trim() !== '');
-        const terminosAceptados = $checkboxTerminos.is(':checked');
-        $botonCrear.prop('disabled', !(camposCompletos && terminosAceptados));
-    }
-
-    // Mostrar/ocultar contraseña
-    $('.mostrar-contrasena').on('click', function () {
-        const $input = $(this).siblings('input');
-        const tipo = $input.attr('type') === 'password' ? 'text' : 'password';
-        $input.attr('type', tipo);
+  
+    $('#boton-cliente').click(function() {
+      $('#opciones-registro').fadeOut(function() {
+        $('#formulario-cliente').fadeIn();
+      });
     });
-});
+  
+    // Validar campos y habilitar botón
+    $('input').on('change', function() {
+      let formulario = $(this).closest('.formulario');
+      let habilitar = true;
+  
+      formulario.find('input').each(function() {
+        if ($(this).val().trim() === '' || ($(this).attr('type') === 'checkbox' && !$(this).is(':checked'))) {
+          habilitar = false;
+        }
+      });
+  
+      formulario.find('button').prop('disabled', !habilitar);
+    });
+  
+    // Mostrar mensaje de error si un campo está vacío
+    $('input').blur(function() {
+      if ($(this).val().trim() === '') {
+        $(this).addClass('error');
+        if (!$(this).next('.mensaje-error').length) {
+          $(this).after('<div class="mensaje-error">No se puede dejar en blanco</div>');
+        }
+      } else {
+        $(this).removeClass('error');
+        $(this).next('.mensaje-error').remove();
+      }
+    });
+  
+    // Mostrar u ocultar contraseñas
+    $('.icono-ojo').click(function() {
+      let input = $(this).siblings('input');
+      if (input.attr('type') === 'password') {
+        input.attr('type', 'text');
+      } else {
+        input.attr('type', 'password');
+      }
+    });
+  
+    // Cambiar colores en mouseenter
+    $('.boton').mouseenter(function() {
+      $(this).css('background-color', '#1b74e4');
+    }).mouseleave(function() {
+      $(this).css('background-color', '');
+    });
+  
+    // Mostrar mensaje al enviar formularios
+    $('#enviar-proveedor, #enviar-cliente').click(function() {
+      $(this).closest('.formulario').fadeOut(function() {
+        $('.contenedor').html('<div class="titulo">Gracias por crear tu cuenta</div>');
+      });
+    });
+  });
+  
