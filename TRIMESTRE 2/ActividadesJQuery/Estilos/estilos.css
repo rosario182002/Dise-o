@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #f2f2f2;
+    background-color: #dfdfdf;
     margin: 0;
     padding: 0;
     display: flex;
@@ -13,12 +13,13 @@ body {
 .contenedor {
     width: 100%;
     max-width: 500px;
-    background-color: #ffffff;
-    border: 1px solid #dfdfdf;
+    background-color: #dfdfdf;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titulo {
@@ -27,6 +28,7 @@ body {
     font-size: 2rem;
     color: #3c3c3c;
     padding-bottom: 20px;
+    background-color: #dfdfdf;
 }
 
 .subtitulo {
@@ -165,8 +167,17 @@ input.error {
 
 #seccion-acceso {
     display: block;
+    background-color: #ffffff;
+    border: 2px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30rem;
+    padding: 15px;  
 }
-
+#formulario-iniciar-sesion{
+    background-color: #ffffff;
+    
+}
 .opcion {
     margin-bottom: 15px;
     text-align: center;
