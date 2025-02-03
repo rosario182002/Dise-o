@@ -32,7 +32,7 @@ $("#crear").on("click", function () {
   }, 500);
 
   setTimeout(function () {
-    $(".contenedor3").fadeIn(20);
+    $(".contenedor3").fadeIn(25);
   }, 200);
 });
 
