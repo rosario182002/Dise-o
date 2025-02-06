@@ -50,25 +50,37 @@ class Serpiente{
          this.context.restore();
     }
 
+    actualizar(){
+        this.dibujar();
+        if(this.teclas.ArrowLeft){
+            this.rotacion -= 0.4;
+        }
+        if(this.teclas.ArrowRight){
+            this.rotacion += 0.4;
+        }
+    }
+
+
     teclado(){
-        document.addEventListener("keydown",(event)=>{
-            if(event.teclas == ArrowLeft){
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "ArrowLeft") {
                 this.teclas.ArrowLeft = true;
             }
-            if(event.teclas == ArrowRight){
+            if (event.key === "ArrowRight") {
                 this.teclas.ArrowRight = true;
             }
         });
-        document.addEventListener("keyup",(event)=>{
-            if(event.teclas == ArrowLeft){
+    
+        document.addEventListener("keyup", (event) => {
+            if (event.key === "ArrowLeft") {
                 this.teclas.ArrowLeft = false;
             }
-            if(event.teclas == ArrowRight){
+            if (event.key === "ArrowRight") {
                 this.teclas.ArrowRight = false;
             }
         });
-
     }
+    
 }
 
 
@@ -89,7 +101,13 @@ for(let i= 0; i < canvas.height; i+=80){
 }
 }
 
-fondo();
-serpiente.dibujar();
+function actualizar(){
+    console.log("actualizar");
+    fondo();
+    serpiente.actualizar();
+    requestAnimationFrame(actualizar);
+}
+actualizar();
 
-//https://www.youtube.com/watch?v=Sl6YUIvwbAk
+
+//https://www.youtube.com/watch?v=Sl6YUIvwbAk 19:12
