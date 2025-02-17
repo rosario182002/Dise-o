@@ -1,0 +1,9 @@
+.enlaceSalto {
+  position: absolute;
+  top: -50px;
+}
+
+.enlaceSalto:focus {
+  /*El enlace esta oculto pero si le das con el tabulador vuelve a aparecer*/
+  top: 0;
+}

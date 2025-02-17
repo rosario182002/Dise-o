@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica 3</title>
+    <link rel="stylesheet" href="../IGarcia_Prac3/css/estilos.css" />
+  </head>
+  <body>
+    <div class="izq">
+      <p>CREAR TU CUENTA</p>
+      <form>
+        <label>Dirección de correo electrónico</label>
+        <input type="email" />
+        <label>Confirma tu dirección</label>
+        <input type="text  " />
+        <label>País de Residencia</label>
+        <select id="pais">
+          <option id="es" selected>España</option>
+          <option id="fr">Francia</option>
+          <option id="por">Portugal</option>
+        </select>
+        <div class="captcha">
+          <div class="rob">
+            <input type="checkbox" />
+            <label>No soy un robot</label>
+          </div>
+          <div class="pic">
+            <img src="../IGarcia_Prac3/imagenes/recaptcha.png" />
+            <p>reCAPTCHA</p>
+            <p>Privacidad - Términos</p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="dch">
+      <form>
+        <fieldset>
+          <p>ACUERDO DE SUSCRIPTOR</p>
+          <p>Índice:</p>
+
+          <ol>
+            <li>
+              Registro como suscriptor, términos aplicables, su cuenta,
+              aceptación de los acuerdos
+            </li>
+            <li>Licencias</li>
+            <li>Facturación, pagos y otras suscripciones</li>
+            <li>Trampas, acciones ilegales y conducta en línea</li>
+            <li>Contenido de terceros</li>
+            <li>Contenido generado por el usuario</li>
+            <li>
+              Renuncias; limitación de responsabilidad; sin garantías; garantía
+              limitada y acuerdo
+            </li>
+            <li>Modificaciones al presente acuerdo</li>
+            <li>Vigencia y finalización</li>
+            <li>
+              Legislación, mediación, jurisdicción o costas legales aplicables
+            </li>
+            <li>
+              Resolución de conflictos/arbitraje vinculante/renuncia a demandas
+              colectivas
+            </li>
+            <li>Varios</li>
+          </ol>
+          <ol>
+            <li>
+              REGISTRO COMO SUSCRIPTOR, TÉRMINOS APLICABLES, SU CUENTA,
+              ACEPTACIÓN DE LOS ACUERDOS
+            </li>
+          </ol>
+          <p>Es un servicio en línea suministrado.</p>
+        </fieldset>
+        <div>
+          <input type="checkbox" id="termino" />
+          <label>Acepto los términos.</label>
+        </div>
+        <input type="button" value="Continuar" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  margin-left: 2%;
+}
+
+.cookies {
+  display: none;
+  width: 100%;
+  background-color: bisque;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  padding: 1rem;
+}
+
+.cookies a {
+  color: black;
+}

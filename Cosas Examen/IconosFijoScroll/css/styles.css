@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Roboto Condensed", bold;
+}
+header {
+  background-color: black;
+  height: 35px;
+  padding: 15px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+nav {
+  margin: 30px;
+  font-size: 2vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.icons {
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+section {
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+}
+
+article {
+  padding: 15px;
+  font-size: 2vw;
+}
+
+h4 {
+  color: rgb(0, 149, 255);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+}
+
+footer div {
+  width: 25%;
+  text-align: center;
+  padding: 5px;
+}
+
+.face {
+  background-color: rgb(5, 74, 164);
+}
+
+.whatsapp {
+  background-color: rgb(33, 192, 33);
+}
+
+.twitter {
+  background-color: rgb(80, 183, 238);
+}
+
+.plus {
+  background-color: rgb(212, 63, 37);
+}

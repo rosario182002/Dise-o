@@ -1,0 +1,113 @@
+body {
+  margin: 20px;
+  background-color: #212429;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  width: 80%;
+}
+
+.izq {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.izq p:first-child {
+  font-weight: lighter;
+  font-size: 2.2rem;
+  letter-spacing: 5px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+form input,
+select {
+  padding: 12px;
+  background-color: #32353c;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  margin-bottom: 45px;
+}
+label {
+  color: #ababab;
+}
+
+.captcha {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid grey;
+}
+.rob {
+  padding: 20px;
+}
+.rob input {
+  transform: scale(2);
+  margin: auto;
+}
+.rob label {
+  padding-left: 15px;
+  color: white;
+}
+
+.pic {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 0 10px;
+  line-height: 0;
+}
+.pic img {
+  width: 30px;
+  margin-top: 10px;
+  align-content: end;
+}
+
+.pic p:first-of-type {
+  font-size: 0.7rem;
+  letter-spacing: 0.2px;
+  text-align: end;
+}
+
+.pic p:last-child {
+  font-size: 0.5rem;
+  letter-spacing: 0.2px;
+  text-align: end;
+}
+
+.dch {
+  width: 100%;
+}
+.dch fieldset {
+  border: 1px solid grey;
+  margin-bottom: 50px;
+}
+.dch p:first-of-type {
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+.dch p:nth-of-type(2),
+.dch p:last-child {
+  margin-left: 20px;
+  color: #ababab;
+}
+
+.dch ol:nth-of-type(2) {
+  color: #ababab;
+}
+#termino {
+  transform: scale(1.5);
+}
+
+input[type="button"] {
+  width: 25%;
+  background-image: linear-gradient(to right, #288ce5, #1062ab);
+}

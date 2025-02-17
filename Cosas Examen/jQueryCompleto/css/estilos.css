@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  font-family: "Open Sans";
+  background-color: #dfdfdf;
+  color: #3c3c3c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.opciones {
+  display: flex;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+.item label {
+  margin-bottom: 1em;
+}
+
+.btn {
+  background-color: #1b74e4;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 250px;
+}
+
+.container2 {
+  background-color: #ffffff;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+}
+
+.inputCuenta {
+  width: 100%;
+  border: 2px solid #dfdfdf;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.inicioSesion {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.8em;
+}
+.btn2 {
+  color: white;
+  background-color: #1b74e4;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  width: 150px;
+}
+.btn2:disabled {
+  background-color: #757575;
+}
+.sociales {
+  width: 100%;
+  background-color: #dfdfdf;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8em;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sociales i {
+  font-size: 1.3em;
+}
+.face i {
+  color: white;
+}
+
+.b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b74e4;
+  border: none;
+  margin: 10px 0;
+  width: 300px;
+}
+.face {
+  background-color: #1b74e4;
+  color: white;
+}
+
+.btn3 {
+  background-color: transparent;
+
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+.google {
+  background-color: white;
+  color: black;
+}
+
+.container3 {
+  display: none;
+}
+
+.usuario {
+  display: flex;
+  padding: 20px;
+}
+
+.userFinal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin: 20px;
+  padding: 30px 70px;
+  border-radius: 5px;
+}
+
+.flecha {
+  background-color: #dfdfdf;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 10px;
+}
+
+.proveedor,
+.cliente {
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 700px;
+  display: none;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+}
+.proveedor span,
+.cliente span {
+  font-size: 0.7rem;
+}
+
+.notas {
+  display: flex;
+  flex-direction: column;
+}
+
+.proveedor input,
+.cliente input,
+.proveedor select {
+  width: calc(100%-8px);
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.fecha {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+#submit-btn,
+#submit-btn2 {
+  width: 100px;
+  padding: 10px;
+  background-color: #1b74e4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 20px;
+  align-items: center;
+  margin: 0 45%;
+}
+#submit-btn:disabled,
+#submit-btn2:disabled {
+  background-color: #757575;
+}
+
+.pass {
+  width: 100%;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.pass input {
+  width: 90%;
+  border: none;
+  outline: none;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  display: block;
+  bottom: 0.5rem;
+  right: 1rem;
+}
+
+.msg-error {
+  color: red;
+  display: block;
+  margin-top: 5px;
+}
+
+.final {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid white;
+  background-color: #dfdfdf;
+  width: 600px;
+  padding: 20px;
+}

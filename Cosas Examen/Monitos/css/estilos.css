@@ -1,0 +1,67 @@
+body {
+  font-size: 2em;
+  margin: 0;
+  padding: 5%;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+  margin-top: 5%;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: none;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+}
+.contrasena,
+.usuario {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid black;
+  padding-bottom: 4px;
+  padding-left: 4px;
+}
+
+.usuario::before {
+  content: "";
+  background-image: url(https://cdn4.iconfinder.com/data/icons/glyphs/24/icons_user-512.png);
+  background-size: cover;
+  width: 30px;
+  height: 25px;
+}
+
+.contrasena::before {
+  content: "";
+  background-image: url(https://img.icons8.com/?size=100&id=cvXpB2FlzuLp&format=png&color=000000);
+  background-size: cover;
+  width: 30px;
+  height: 25px;
+}
+
+.contrasena:focus-within::before {
+  background-image: url(https://img.icons8.com/?size=100&id=eY0uAA2Idt8H&format=png&color=000000);
+}
+
+.icon {
+  background-image: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-eye-512.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 30px 30px;
+  width: 95%;
+  padding: 5px;
+}

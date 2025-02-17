@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/estilos.css" />
+  </head>
+  <body>
+    <!-- PRIMERA PANTALLA -->
+    <h1 id="titulo">Acceso</h1>
+    <div class="container">
+      <span>Inicia sesión con tu cuenta</span>
+      <span>o crea una cuenta nueva.</span>
+      <div class="opciones">
+        <div class="item">
+          <label>¿Tienes ya una cuenta?</label>
+          <button id="iniciar" class="btn">Iniciar sesión</button>
+        </div>
+        <div class="item">
+          <label>¿No tienes cuenta?</label>
+          <button id="crear" class="btn">Crear una cuenta</button>
+        </div>
+      </div>
+    </div>
+    <!-- PANTALLA CUENTA -->
+    <div class="container2">
+      <input
+        type="text"
+        id="email"
+        placeholder="Correo electrónico o nombre de acceso"
+        class="inputCuenta"
+      />
+      <input
+        type="password"
+        id="pass"
+        placeholder="Contraseña"
+        class="inputCuenta"
+      />
+      <div class="inicioSesion">
+        <a href="#">¿Has olvidado la contraseña?</a>
+        <button class="btn2">Iniciar sesión</button>
+      </div>
+      <div class="sociales">
+        <span>Inicia sesión con</span>
+        <div class="b face">
+          <i class="fa-brands fa-facebook-f"></i>
+          <button class="btn3 face">Facebook</button>
+        </div>
+        <div class="b google">
+          <i class="fa-brands fa-google"></i>
+          <button class="btn3 google">Google</button>
+        </div>
+      </div>
+    </div>
+    <!-- PANTALLA PROVEEDOR/CLIENTE -->
+    <div class="container3">
+      <div class="usuario">
+        <div class="userFinal" id="uno">
+          <span>Eres proveedor</span>
+          <button class="flecha">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="userFinal" id="dos">
+          <span>Eres cliente final</span>
+          <button class="flecha">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- CUENTA PROVEEDOR -->
+    <form class="proveedor">
+      <div class="formulario">
+        <label>Nombre comercial</label>
+        <div class="notas">
+          <input type="text" placeholder="Nombre" />
+          <span>Nota: No hace falta que coincida con el nombre legal.</span>
+        </div>
+
+        <label>Correo electrónico</label>
+        <div class="notas">
+          <input type="text" placeholder="bb@bb.es" />
+        </div>
+
+        <label>Contraseña</label>
+        <div class="notas">
+          <div class="pass">
+            <input type="password" placeholder="Contraseña" />
+            <span id="icon"><i class="fa-solid fa-eye-slash"></i></span>
+          </div>
+        </div>
+        <label>Confirmar contraseña</label>
+        <div class="notas">
+          <div class="pass">
+            <input type="password" placeholder="Contraseña" />
+            <span id="icon"><i class="fa-solid fa-eye-slash"></i></span>
+          </div>
+        </div>
+        <label>Fecha de nacimiento</label>
+        <div>
+          <div class="fecha">
+            <select id="year" name="year">
+              <option value="">Año</option>
+            </select>
+            <select id="month" name="month">
+              <option value="">Mes</option>
+            </select>
+            <select id="day" name="day">
+              <option value="">Día</option>
+            </select>
+          </div>
+          <span>No podrás cambiar tu fecha de nacimiento más adelante</span>
+        </div>
+      </div>
+      <hr />
+      <div class="checkbox-container">
+        <input type="checkbox" id="terminos" required />
+        <span
+          >Confirmo que acepto los términos del contrato de la cuenta y que
+          estoy deacuerdo con la política de privacidad</span
+        >
+      </div>
+      <hr />
+      <button type="button" disabled id="submit-btn">Crear</button>
+    </form>
+
+    <!-- CUENTA cliente -->
+    <form class="cliente">
+      <div class="formulario">
+        <label>Nombre comercial</label>
+        <div class="notas">
+          <input type="text" placeholder="Nombre" />
+          <span>Nota: No hace falta que coincida con el nombre legal.</span>
+        </div>
+
+        <label>Correo electrónico</label>
+        <div class="notas">
+          <input type="text" placeholder="bb@bb.es" />
+        </div>
+
+        <label>Contraseña</label>
+        <div class="notas">
+          <div class="pass">
+            <input type="password" placeholder="Contraseña" />
+            <span id="icon"><i class="fa-solid fa-eye-slash"></i></span>
+          </div>
+        </div>
+        <label>Confirmar contraseña</label>
+        <div class="notas">
+          <div class="pass">
+            <input type="password" placeholder="Contraseña" />
+            <span id="icon"><i class="fa-solid fa-eye-slash"></i></span>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="checkbox-container">
+        <input type="checkbox" id="terminos2" required />
+        <span
+          >Confirmo que acepto los términos del contrato de la cuenta y que
+          estoy deacuerdo con la política de privacidad</span
+        >
+      </div>
+      <hr />
+      <button type="button" disabled id="submit-btn2">Crear</button>
+    </form>
+
+    <!-- MENSAJE FINAL -->
+    <div class="final">
+      <p>Gracias por crear tu cuenta</p>
+    </div>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    ></script>
+    <script src="./js/codigo.js"></script>
+  </body>
+</html>
